@@ -1,0 +1,60 @@
+section {
+    border: 1px solid gray; /* グレーの境界線 */
+    border-radius: 8px; /* 角丸 */
+    background-color: #ccffcc; /* 薄緑色の背景 */
+    padding: 20px; /* セクション内の余白 */
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    padding: 10px;
+    background-image: url('img/ニライカナイ橋2.jpg'); /* 背景画像ニライカナイ橋 */
+    background-size: cover; /* 背景画像を要素全体にカバーするように設定 */
+    background-repeat: no-repeat; /* 背景画像を繰り返さないようにする */
+    background-position: center; /* 背景画像を中央に配置 */
+}
+
+.row {
+    display: flex;
+    justify-content: space-around; /* 要素を均等に配置 */
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #ccffcc; /* 緑色の背景 */
+    text-align: center; /* テキストを中央に配置 */
+}
+
+img {
+    width: 100%; /* 横幅を親要素に合わせる */
+    height: auto; /* アスペクト比を保持しつつ高さを自動調整 */
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+h2 {
+    background-color: #ccccff; /* 青色の背景 */
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    background-color: #ffffcc; /* 黄色の背景 */
+    padding: 10px;
+    text-align: center;
+}
+
+hr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    border-top: 2px solid pink; /* ピンク色の横線 */
+}
