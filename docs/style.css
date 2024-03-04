@@ -98,11 +98,12 @@
   
   /* 各my-favoriteセクションの背景色を指定 */
   .my-favorite:nth-child(odd) {
-    background-color: #75dcf6; /* 奇数番目のセクション */
+    background-color: #75f6a4; /* 奇数番目のセクション */
   }
   
   .my-favorite:nth-child(even) {
-    background-color: #f6a8d7; /* 偶数番目のセクション */
+    background-color: #75f6a4; /* 偶数番目のセクション */
+    margin-top: 10px;
   }
   /* フッター */
   footer {
