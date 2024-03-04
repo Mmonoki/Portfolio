@@ -33,7 +33,7 @@
   }
   
   section p {
-    font-size: 15px;
+    font-size: 18px;
   }
   
   /* Hero Section Style */
@@ -93,7 +93,7 @@
   }
   
   .my-favorite p {
-    text-align: left; /* セクション内の文を中央寄せに */
+    text-align: center; /* セクション内の文を中央寄せに */
   }
   
   /* 各my-favoriteセクションの背景色を指定 */
