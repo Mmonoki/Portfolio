@@ -1,60 +1,114 @@
-section {
-    border: 1px solid gray; /* グレーの境界線 */
-    border-radius: 8px; /* 角丸 */
-    background-color: #ccffcc; /* 薄緑色の背景 */
-    padding: 20px; /* セクション内の余白 */
-}
-
-h1 {
-    font-size: 30px;
-    text-align: center;
-    color: blue;
+/* リセットcss */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* 全体のスタイル */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color: #06c2f1;
+    color: #fff;
     padding: 10px;
-    background-image: url('img/ニライカナイ橋2.jpg'); /* 背景画像ニライカナイ橋 */
-    background-size: cover; /* 背景画像を要素全体にカバーするように設定 */
-    background-repeat: no-repeat; /* 背景画像を繰り返さないようにする */
-    background-position: center; /* 背景画像を中央に配置 */
-}
-
-.row {
-    display: flex;
-    justify-content: space-around; /* 要素を均等に配置 */
-}
-
-.column {
-    flex: 1;
-    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* メインセクション */
+  main {
+    padding: 20px;
+  }
+  
+  /* Section Style */
+  section {
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px; /* 角丸 */
+  }
+  
+  section p {
+    font-size: 15px;
+  }
+  
+  /* Hero Section Style */
+  #hero {
+    background-color: #b1efbc; /* セクションごとの背景色を指定 */
+  }
+  
+  /* About Section Style */
+  #About {
+    background-color: #cfe89a; /* セクションごとの背景色を指定 */
+  }
+  /* カラム */
+  .column {
+    width: 50%;
+    float: left;
+    padding: 10px;
     box-sizing: border-box;
-    position: relative;
-    background-color: #ccffcc; /* 緑色の背景 */
-    text-align: center; /* テキストを中央に配置 */
-}
-
-img {
-    width: 100%; /* 横幅を親要素に合わせる */
-    height: auto; /* アスペクト比を保持しつつ高さを自動調整 */
+  }
+  
+  /* 文字を中央寄せにする */
+  .column p,
+  section p {
+      text-align: center;
+  }
+  
+  /* About Meセクションのタイトルを中央寄せにする */
+  #About h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* 画像 */
+  img {
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 50%;
-}
-
-h2 {
-    background-color: #ccccff; /* 青色の背景 */
+    border-radius: 50%; /* 画像を丸くする */
+    overflow: hidden; /* 画像が枠外にはみ出ないようにする */
     padding: 10px;
+  }
+  
+  /* My favoriteセクション */
+  section.my-favorite {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* My favoriteのコンテンツ */
+  section.my-favorite .content {
+    margin-top: 10px;
+  }
+  
+  /* My favoriteページの追加内容 */
+  .my-favorite h1 {
+    text-align: center; /* セクション内のタイトルを中央寄せに */
+  }
+  
+  .my-favorite p {
+    text-align: left; /* セクション内の文を中央寄せに */
+  }
+  
+  /* 各my-favoriteセクションの背景色を指定 */
+  .my-favorite:nth-child(odd) {
+    background-color: #75dcf6; /* 奇数番目のセクション */
+  }
+  
+  .my-favorite:nth-child(even) {
+    background-color: #f6a8d7; /* 偶数番目のセクション */
+  }
+  /* フッター */
+  footer {
+    background-color: #e629ca;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-}
-
-p {
-    background-color: #ffffcc; /* 黄色の背景 */
-    padding: 10px;
-    text-align: center;
-}
-
-hr {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border: none;
-    border-top: 2px solid pink; /* ピンク色の横線 */
-}
+  }
+  
