@@ -126,6 +126,27 @@ img {
   padding: 10px;
 }
 
+/* My favorite Section Style */
+.my-favorite {
+  background-color: #e8f4fa;
+}
+
+.my-favorite h1 {
+  background-color: #b3e0ff; /* セクションのタイトルの背景色を薄い青に設定 */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 10px;
+}
+
+/* 文字を中央寄せにする */
+.my-favorite p {
+  text-align: center;
+}
+
+
 /* フッター */
 footer {
   background-color: #e629ca;
@@ -133,3 +154,4 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
