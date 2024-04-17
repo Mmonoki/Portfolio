@@ -1,115 +1,135 @@
 /* リセットcss */
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* 全体のスタイル */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* ヘッダー */
-  header {
-    background-color: #06c2f1;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 24px;
-  }
-  
-  /* メインセクション */
-  main {
-    padding: 20px;
-  }
-  
-  /* Section Style */
-  section {
-    margin-bottom: 10px;
-    padding: 20px;
-    border-radius: 10px; /* 角丸 */
-  }
-  
-  section p {
-    font-size: 18px;
-  }
-  
-  /* Hero Section Style */
-  #hero {
-    background-color: #b1efbc; /* セクションごとの背景色を指定 */
-  }
-  
-  /* About Section Style */
-  #About {
-    background-color: #cfe89a; /* セクションごとの背景色を指定 */
-  }
-  /* カラム */
-  .column {
-    width: 50%;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  /* 文字を中央寄せにする */
-  .column p,
-  section p {
-      text-align: center;
-  }
-  
-  /* About Meセクションのタイトルを中央寄せにする */
-  #About h2 {
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  /* 画像 */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%; /* 画像を丸くする */
-    overflow: hidden; /* 画像が枠外にはみ出ないようにする */
-    padding: 10px;
-  }
-  
-  /* My favoriteセクション */
-  section.my-favorite {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  /* My favoriteのコンテンツ */
-  section.my-favorite .content {
-    margin-top: 10px;
-  }
-  
-  /* My favoriteページの追加内容 */
-  .my-favorite h1 {
-    text-align: center; /* セクション内のタイトルを中央寄せに */
-  }
-  
-  .my-favorite p {
-    text-align: center; /* セクション内の文を中央寄せに */
-  }
-  
-  /* 各my-favoriteセクションの背景色を指定 */
-  .my-favorite:nth-child(odd) {
-    background-color: #75f6a4; /* 奇数番目のセクション */
-  }
-  
-  .my-favorite:nth-child(even) {
-    background-color: #75f6a4; /* 偶数番目のセクション */
-    margin-top: 10px;
-  }
-  /* フッター */
-  footer {
-    background-color: #e629ca;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  padding: 0;
+  margin: 0;
+}
+
+/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  background-color: #06c2f1;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* メインセクション */
+main {
+  padding: 20px;
+}
+
+/* Section Style */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px; /* 角丸 */
+}
+
+section p {
+  font-size: 18px;
+}
+
+/* Hero Section Style */
+#hero {
+  background-color: #b1efbc; /* セクションごとの背景色を指定 */
+}
+
+/* About Section Style */
+#About {
+  background-color: #cfe89a; /* セクションごとの背景色を指定 */
+}
+
+/* My Works Section Style */
+#MyWorks {
+  background-color: #f7d9a3; /* セクションごとの背景色を指定 */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #06c2f1;
+  color: white;
+}
+
+.work {
+  margin-top: 20px;
+}
+
+.work h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.work p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.work a {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #06c2f1;
+  margin-top: 10px;
+}
+
+.work a:hover {
+  text-decoration: underline;
+}
+
+/* カラム */
+.column {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 文字を中央寄せにする */
+.column p,
+section p {
+  text-align: center;
+}
+
+/* セクションのタイトルを中央寄せにする */
+section h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* 画像 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; /* 画像を丸くする */
+  overflow: hidden; /* 画像が枠外にはみ出ないようにする */
+  padding: 10px;
+}
+
+/* フッター */
+footer {
+  background-color: #e629ca;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
