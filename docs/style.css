@@ -28,7 +28,7 @@ main {
 /* Section Style */
 section {
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px; /* 角丸 */
 }
 
@@ -59,7 +59,7 @@ table {
 
 th, td {
   border: 1px solid #ccc;
-  padding: 8px;
+  padding: 12px;
   text-align: left;
 }
 
