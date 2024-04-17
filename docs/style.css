@@ -132,6 +132,7 @@ img {
 }
 
 .my-favorite h1 {
+  text-align: center;
   background-color: #b3e0ff; /* セクションのタイトルの背景色を薄い青に設定 */
   padding: 10px;
   margin-bottom: 20px;
