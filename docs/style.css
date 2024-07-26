@@ -147,7 +147,6 @@ img {
   text-align: center;
 }
 
-
 /* フッター */
 footer {
   background-color: #e629ca;
@@ -156,3 +155,22 @@ footer {
   text-align: center;
 }
 
+/* おしゃれなボタンのスタイル */
+.link-button {
+  background-color: #06c2f1; /* ボタンの背景色 */
+  color: white; /* ボタンの文字色 */
+  border: none; /* ボーダーなし */
+  padding: 10px 20px; /* 内側の余白 */
+  text-align: center; /* 文字を中央寄せ */
+  text-decoration: none; /* 下線を削除 */
+  display: inline-block; /* インラインブロックにすることでボタンのように表示 */
+  font-size: 16px; /* フォントサイズ */
+  border-radius: 5px; /* 角丸にする */
+  cursor: pointer; /* カーソルをポインターにする */
+  transition: background-color 0.3s ease; /* 背景色の変化にトランジションを追加 */
+  width: 150px; /* ボタンの幅を固定 */
+}
+
+.link-button:hover {
+  background-color: #045a8d; /* ホバー時の背景色 */
+}
