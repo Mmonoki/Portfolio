@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>血圧管理アプリ</title>
+    <link rel="stylesheet" href="ketuatu.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx"></script> <!-- SheetJSをインポート -->
+</head>
+<body>
+    <div class="container">
+        <h1>血圧管理アプリ</h1>
+        <button id="showInstructions" class="info-btn">アプリの使い方</button>
+        <form id="bloodPressureForm">
+            <label for="date">日付:</label>
+            <input type="date" id="date" required>
+            <label for="systolic">収縮期血圧 (上):</label>
+            <input type="number" id="systolic" required>
+            <label for="diastolic">拡張期血圧 (下):</label>
+            <input type="number" id="diastolic" required>
+            <button type="submit">保存</button>
+        </form>
+        <h2>記録一覧</h2>
+        <table id="recordsTable">
+            <thead>
+                <tr>
+                    <th>日付</th>
+                    <th>収縮期血圧</th>
+                    <th>拡張期血圧</th>
+                    <th>編集</th>
+                    <th>削除</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="downloadExcel" class="excel-btn">データをエクセルでダウンロード</button>
+        <h2>グラフ</h2>
+        <canvas id="bloodPressureChart"></canvas>
+    </div>
+    
+    <!-- 編集モーダル -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>編集</h2>
+            <form id="editForm">
+                <label for="editDate">日付:</label>
+                <input type="date" id="editDate" required>
+                <label for="editSystolic">収縮期血圧 (上):</label>
+                <input type="number" id="editSystolic" required>
+                <label for="editDiastolic">拡張期血圧 (下):</label>
+                <input type="number" id="editDiastolic" required>
+                <button type="submit">保存</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 取説モーダル -->
+    <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>🔳アプリの使い方🔳</h2>
+            <p>測定した日付、測定値を入力し保存ボタンを押して保存します。</p>
+            <p>収縮期血圧 (上)と拡張期血圧 (下)それぞれがグラフで表示されます。</p>
+            <p>データはローカルストレージに保存される仕組みになっています。</p>
+            <p>ある程度データがデータを入力したら容量を空けるために不要なデータは削除するのがおすすめです。</p>
+            <p>もしデータを取っておきたい場合はエクセルにダウンロードボタンを押してデータをとっておきましょう。</p>
+        </div>
+    </div>
+    
+    <script src="ketuatu.js"></script>
+</body>
+</html>
