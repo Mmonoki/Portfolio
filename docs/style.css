@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box; /* 追加：ボックスサイズを含める */
 }
 
 /* 全体のスタイル */
@@ -51,56 +52,31 @@ section p {
   background-color: #f7d9a3; /* セクションごとの背景色を指定 */
 }
 
-table {
+/* テーブルスタイルの変更 */
+.table {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-th, td {
+.table-header, .table-row {
+  display: flex;
+  width: 100%;
+}
+
+.table-cell {
+  flex: 1;
   border: 1px solid #ccc;
   padding: 12px;
   text-align: left;
 }
 
-th {
+.table-header .table-cell {
   background-color: #06c2f1;
   color: white;
-}
-
-.work {
-  margin-top: 20px;
-}
-
-.work h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.work p {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.work a {
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  text-decoration: none;
-  color: #06c2f1;
-  margin-top: 10px;
-}
-
-.work a:hover {
-  text-decoration: underline;
-}
-
-/* カラム */
-.column {
-  width: 50%;
-  float: left;
-  padding: 10px;
-  box-sizing: border-box;
+  font-weight: bold;
 }
 
 /* 文字を中央寄せにする */
@@ -173,4 +149,39 @@ footer {
 
 .link-button:hover {
   background-color: #045a8d; /* ホバー時の背景色 */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .table {
+    display: block; /* テーブルをブロック表示に変更 */
+  }
+
+  .table-row {
+    display: flex;
+    flex-direction: column; /* 行を縦方向に表示 */
+    margin-bottom: 20px; /* 行の間に余白を追加 */
+  }
+
+  .table-cell {
+    width: 100%; /* セルの幅を100%に */
+    display: flex;
+    justify-content: space-between; /* セル内のコンテンツを左右に分ける */
+    padding: 10px 0; /* 上下のパディングを調整 */
+  }
+
+  .table-header .table-cell {
+    display: none; /* ヘッダーセルを非表示 */
+  }
+
+  .table-cell::before {
+    content: attr(data-label); /* データラベルを追加 */
+    font-weight: bold;
+    width: 50%; /* ラベルの幅を50%に */
+  }
+
+  .link-button {
+    width: 100%; /* ボタンの幅を100%に */
+    margin-top: 10px; /* ボタンの上に余白を追加 */
+  }
 }
