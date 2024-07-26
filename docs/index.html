@@ -32,38 +32,33 @@
     </section>
     <section id="MyWorks">
       <h2>My Works</h2>
-      <div class="responsive-table">
-        <table>
-          <thead>
-            <tr>
-              <th>作品</th>
-              <th>紹介</th>
-              <th>リンク</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-label="作品">メモアプリ（これも乙）</td>
-              <td data-label="紹介">日々のあれこれを画像をあげて一言メモ。</td>
-              <td data-label="リンク">
-                <!-- リンクアイコンをボタンに変更 -->
-                <a href="https://mmonoki.github.io/Portfolio/memo" target="_blank" rel="noopener noreferrer">
-                  <button class="link-button">メモアプリ</button>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="作品">血圧管理アプリ</td>
-              <td data-label="紹介">血圧を測定して入力すると収縮期血圧 (上)と拡張期血圧 (下)それぞれがグラフで表示されます。</td>
-              <td data-label="リンク">
-                <!-- リンクアイコンをボタンに変更 -->
-                <a href="https://mmonoki.github.io/Portfolio/ketuatu" target="_blank" rel="noopener noreferrer">
-                  <button class="link-button">血圧管理アプリ</button>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- テーブルをレスポンシブに対応するために、Flexboxを使用 -->
+      <div class="table">
+        <div class="table-row table-header">
+          <div class="table-cell">作品</div>
+          <div class="table-cell">紹介</div>
+          <div class="table-cell">リンク</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell" data-label="作品">メモアプリ（これも乙）</div>
+          <div class="table-cell" data-label="紹介">日々のあれこれを画像をあげて一言メモ。</div>
+          <div class="table-cell" data-label="リンク">
+            <!-- リンクアイコンをボタンに変更 -->
+            <a href="https://mmonoki.github.io/Portfolio/memo" target="_blank" rel="noopener noreferrer">
+              <button class="link-button">メモアプリ</button>
+            </a>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell" data-label="作品">血圧管理アプリ</div>
+          <div class="table-cell" data-label="紹介">血圧を測定して入力すると収縮期血圧 (上)と拡張期血圧 (下)それぞれがグラフで表示されます。</div>
+          <div class="table-cell" data-label="リンク">
+            <!-- リンクアイコンをボタンに変更 -->
+            <a href="https://mmonoki.github.io/Portfolio/ketuatu" target="_blank" rel="noopener noreferrer">
+              <button class="link-button">血圧管理アプリ</button>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
