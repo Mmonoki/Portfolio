@@ -30,6 +30,9 @@ function displayRecords() {
     const tbody = document.querySelector('#recordsTable tbody');
     tbody.innerHTML = '';
 
+    // データを日付順に降順でソート
+    records.sort((a, b) => new Date(b.date) - new Date(a.date));
+
     records.forEach((record, index) => {
         const row = document.createElement('tr');
         row.innerHTML = `
